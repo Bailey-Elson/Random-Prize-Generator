@@ -4,6 +4,6 @@ import requests
 
 @app.route('/generateprize', methods=['GET'])
 def generateprize():
-    prizetype, prize = requests.get('http://localhost:5002/randomprize')
-    output_sentence = "You got a "+ prizetype.text + " prize, you won " + prize.text
+    prize_type, prize = requests.get('http://localhost:5002/randomprize')
+    output_sentence = "You got a "+ prize_type.text + " prize, you won " + prize.text
     return output_sentence

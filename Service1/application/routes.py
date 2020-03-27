@@ -7,4 +7,7 @@ import random
 def home():
     response = requests.get('http://localhost:5003/generateprize')
     output_sentence = response.text
+    print("below")
+    print(output_sentence)
+    print("above^^^^")
     return render_template('index.html', output_sentence = output_sentence, title = 'Home')
