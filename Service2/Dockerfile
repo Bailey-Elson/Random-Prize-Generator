@@ -1,7 +1,7 @@
 FROM python:alpine
-RUN mkdir ./opt/service1
-COPY . /opt/service1
-WORKDIR /opt/service1
+RUN mkdir ./opt/service2
+COPY . /opt/service2
+WORKDIR /opt/service2
 RUN set -e; \
     apk add --no-cache --virtual .build-deps \
         gcc \
