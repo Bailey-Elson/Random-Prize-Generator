@@ -28,7 +28,7 @@ services:
 
     service4: 
         build: 
-            context: ./service4/
+            context: ./Service4/
             dockerfile: Dockerfile
         ports:
             "5003:5003"
