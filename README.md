@@ -19,3 +19,28 @@
 8. Future Implementations 
 
 ---
+ ## Brief
+ #### Objective
+ #### Requirements
+ ---
+ ## Project Plan 
+ #### Kanban Board
+ #### Sprints
+ ---
+ ## Risk Assesment 
+ ---
+ ## My Soloution 
+ #### Initial Plan
+ #### Initial Diagrams
+ #### End Plan
+ #### End Diagrams
+ ---
+ ## Testing
+ ---
+ ## Development 
+ #### CI Pipeline 
+ ---
+ ## Evaluation 
+ ---
+ ## Future Implementations
+ ---
