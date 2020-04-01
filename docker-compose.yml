@@ -1,0 +1,42 @@
+version: "3.7"
+services:
+    service1:
+        build:
+            context: ./Service1
+            dockerfile: Dockerfile
+        ports:
+            - "5000:5000"
+        networks: 
+            - SFIA2Network 
+        environment: 
+            - MYSQLHOST=${MYSQLHOST}
+            - MYSQLUSER=${MYSQLUSER}
+            - MYSQLPASSWORD=${MYSQLPASSWORD}
+            - MYSQLDB=${MYSQLDB}
+    service2:
+        build:
+            context: ./Service2
+            dockerfile: Dockerfile
+        ports:
+            - "5001:5001"
+        networks: 
+            - SFIA2Network 
+    service3:
+        build:
+            context: ./Service3
+            dockerfile: Dockerfile
+        ports:
+            - "5002:5002"
+        networks: 
+            - SFIA2Network 
+    service4: 
+        build: 
+            context: ./Service4
+            dockerfile: Dockerfile
+        ports:
+            - "5003:5003"
+        networks: 
+            - SFIA2Network 
+networks: 
+    SFIA2Network:
+        driver: bridge

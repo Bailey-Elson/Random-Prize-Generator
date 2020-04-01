@@ -1,4 +1,4 @@
-FROM python:alpine
+FROM python:alpine3.11
 RUN mkdir ./opt/service1
 COPY . /opt/service1
 WORKDIR /opt/service1
@@ -12,4 +12,4 @@ RUN set -e; \
         postgresql-dev \
     ;
 RUN pip3 install -r requirements.txt
-ENTRYPOINT ["usr/local/bin/python3", "app.py"]
+ENTRYPOINT ["python3", "app.py"]

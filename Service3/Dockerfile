@@ -12,4 +12,4 @@ RUN set -e; \
         postgresql-dev \
     ;
 RUN pip3 install -r requirements.txt
-ENTRYPOINT ["usr/local/bin/python3", "app.py"]
+ENTRYPOINT ["python3", "app.py"]
