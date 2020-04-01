@@ -67,6 +67,10 @@ Service #4:
    * Generates the output sentence based on service #2 and #3 return values
 
 #### Initial Diagrams
+###### Application flowchart 
+![Imgur](https://i.imgur.com/HY5Uuab.png)
+The flow chart above shows the initail plan for the layout of my application. With the flow chart split into the four different services. 
+
 #### End Plan
 #### End Diagrams
 ---
