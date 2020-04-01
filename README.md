@@ -68,8 +68,22 @@ Service #4:
 
 #### Initial Diagrams
 ###### Application flowchart 
+
 ![Imgur](https://i.imgur.com/HY5Uuab.png)
-The flow chart above shows the initail plan for the layout of my application. With the flow chart split into the four different services. 
+
+The flow chart above shows the initail plan for the layout of my application. With the flow chart split into the four different services. In the case of the above flowchart start refers to when the user interface(webpage) is loaded for the first time.
+
+###### Database Diagram
+
+![Imgur](https://i.imgur.com/TxSAPlV.png)
+
+The above diagram shows my database layout. As you only need to to show the functiomnality of persisting some data into a SQL databse i have opted to keep my databse simple to begin with, with the option to expand on it later. To begin with I will only have onr table inside my database with only two coloumns. The first coloumn is ID which is the primary key and auto increments. The second coloumn is prize which stores the outputted sentence that the application generates.
+
+###### User Interface Design
+
+![Imgur](https://i.imgur.com/QSudWix.png)
+
+The above image is my inital design for the user interface. As a complicated or aesthetically pleasing user interface is not required for this project i have decided to keep the user interface simple and streamlined only containing the bare necessities for the applicaion to run so that i can focus more on the parts of the project that are more important. I have the option to redesign the user interface at a late date if time permits.
 
 #### End Plan
 #### End Diagrams
@@ -82,4 +96,11 @@ The flow chart above shows the initail plan for the layout of my application. Wi
 ## Evaluation 
 ---
 ## Future Implementations
+
+###### User Iterface Redeisgn 
+
+![Imgur](https://i.imgur.com/iOV6uuy.png)
+
+The above image is a rough design for a new user interface. This new design is more aesthetically pleasing then then the old design while keeping all the applications functionality. 
+
 ---
