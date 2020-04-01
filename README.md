@@ -55,10 +55,13 @@ Service #1:
    * Renders HTML and Jinja user interface
    * Calls service #4 to start the generation of prize
    * Stores the prize in a SQL database
+   
 Service #2:
    * Generates the typr of prize (good, average, bad)
+   
 Service #3:
    * Generates the prize from a list based on the prize type
+   
 Service #4:
    * Calls service #2 and #3 
    * Generates the output sentence based on service #2 and #3 return values
