@@ -2,8 +2,6 @@ version: "3.7"
 services:
     service1:
         image: baileyelson/sfia2service1
-        ports:
-            - "5000:5000"
         environment: 
             - MYSQLHOST=${MYSQLHOST}
             - MYSQLUSER=${MYSQLUSER}
@@ -15,28 +13,36 @@ services:
             - ingress 
     service2:
         image: baileyelson/sfia2service2
-        ports:
-            - "5001:5001"
         deploy: 
             replicas: 3
         networks: 
             - ingress 
     service3:
         image: baileyelson/sfia2service3
-        ports:
-            - "5002:5002"
         deploy:
             replicas: 3
         networks: 
             - ingress 
     service4: 
         image: baileyelson/sfia2service4
-        ports:
-            - "5003:5003"
         deploy:
             replicas: 3
         networks: 
             - ingress 
+    servicenginx:
+        image: baileyelson/sfia2nginx
+        ports: 
+            - "80:80"
+        networks:
+            - ingress 
+        depends_on: 
+            - service1
+            - service2
+            - service3
+            - service4
+        deploy:
+            replicas: 3
+
 networks: 
     ingress:
         driver: overlay

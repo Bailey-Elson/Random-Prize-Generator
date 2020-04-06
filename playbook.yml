@@ -1,0 +1,23 @@
+- name: install docker to workers
+  hosts: servers
+  become: true
+  roles:
+    - docker-installation
+
+- name: install docker to manager
+  hosts: localhost
+  become: true
+  roles:
+    - docker-installation
+
+- name: initialise docker swarm
+  hosts: localhost
+  become: true
+  roles: 
+    - docker-swarm-init
+
+- name: add workers to the swarm
+  hosts: swarm-workers
+  become: true
+  roles: 
+    - docker-swarm-add-workers
