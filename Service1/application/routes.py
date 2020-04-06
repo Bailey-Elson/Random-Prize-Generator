@@ -8,6 +8,7 @@ mysql = MySQL(app)
 
 @app.route('/', methods=['GET'])
 def home():
+    print("below\nbelow\nbelow\nbelow")
     response = requests.get('http://service4:5003/generateprize')
     output_sentence = response.text
     print(output_sentence)

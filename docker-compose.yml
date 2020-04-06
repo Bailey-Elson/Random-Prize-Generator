@@ -1,42 +1,42 @@
 version: "3.7"
 services:
     service1:
-        build:
-            context: ./Service1
-            dockerfile: Dockerfile
+        image: baileyelson/sfia2service1
         ports:
             - "5000:5000"
-        networks: 
-            - SFIA2Network 
         environment: 
             - MYSQLHOST=${MYSQLHOST}
             - MYSQLUSER=${MYSQLUSER}
             - MYSQLPASSWORD=${MYSQLPASSWORD}
             - MYSQLDB=${MYSQLDB}
+        deploy:
+            replicas: 3
+        networks: 
+            - ingress 
     service2:
-        build:
-            context: ./Service2
-            dockerfile: Dockerfile
+        image: baileyelson/sfia2service2
         ports:
             - "5001:5001"
+        deploy: 
+            replicas: 3
         networks: 
-            - SFIA2Network 
+            - ingress 
     service3:
-        build:
-            context: ./Service3
-            dockerfile: Dockerfile
+        image: baileyelson/sfia2service3
         ports:
             - "5002:5002"
+        deploy:
+            replicas: 3
         networks: 
-            - SFIA2Network 
+            - ingress 
     service4: 
-        build: 
-            context: ./Service4
-            dockerfile: Dockerfile
+        image: baileyelson/sfia2service4
         ports:
             - "5003:5003"
+        deploy:
+            replicas: 3
         networks: 
-            - SFIA2Network 
+            - ingress 
 networks: 
-    SFIA2Network:
-        driver: bridge
+    ingress:
+        driver: overlay
