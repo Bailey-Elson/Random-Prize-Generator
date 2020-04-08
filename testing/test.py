@@ -5,7 +5,7 @@ import os
 
 def test_service():
     http = urllib3.PoolManager()
-    r = http.request('GET', 'http://localhost:80/')
+    r = http.request('GET', 'http://localhost/')
     assert 200 == r.status
 
 # def test_service1():
