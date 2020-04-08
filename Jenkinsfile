@@ -5,7 +5,7 @@ pipeline{
         stage("testingInstall"){
             steps{
                 sh 'echo "installing docker locally"'
-                sh 'sudo apt-get remove docker docker-engine docker.io -y'
+                // sh 'sudo apt-get remove docker docker-engine docker.io -y'
                 sh 'sudo apt update -y'
                 sh 'sudo apt-get install apt-transport-https'
                 sh 'sudo apt-get install ca-certificates'
