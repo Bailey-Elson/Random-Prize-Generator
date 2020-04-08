@@ -9,7 +9,7 @@ pipeline{
         //         sh 'python3 ~/workspace/SFIA2/Service3/app.py'
         //         sh 'python3 ~/workspace/SFIA2/Service4 /app.py'
         //     }
-        }
+        // }
         stage('Development Enviroment'){
             steps{
 
