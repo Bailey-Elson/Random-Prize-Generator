@@ -8,7 +8,7 @@ pipeline{
 
                 sh 'chmod +x ./script/*'
                 sh './script/ansible.sh'
-                // sh './script/docker.sh'
+                sh './script/docker.sh'
                 
             }
         }
