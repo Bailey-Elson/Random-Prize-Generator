@@ -1,9 +1,14 @@
 - name: Swarm status
   shell: >
         docker node ls
-  regisgter: swarm_status
+  register: swarm_status
   ignore_errors: true
   tags: swarm
+
+# - name: Swarm status
+#   shell: >
+#         docker node ls
+#   regisgter
 
 - name: Initialise docker swarm
   shell: >
