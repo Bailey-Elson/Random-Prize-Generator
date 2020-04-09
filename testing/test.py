@@ -3,6 +3,7 @@ import urllib3
 from flask import Flask
 import os
 import requests
+import csv
 from flask_mysqldb import MySQL
 def test_service():
     http = urllib3.PoolManager()
@@ -39,3 +40,13 @@ def test_addPrizeTable():
         mysql.connection.commit()
         cur.close()
         assert numRecords1 + 1 == numRecords2
+def test_csvfile():
+    file = open("/home/Admin/projects/SFIA2/SFIA2/Service3/application/prizes.txt")
+    reader = csv.reader(file)
+    lines= len(list(reader))
+    assert lines == 3
+def test_csvfile2():
+    for row in open("/home/Admin/projects/SFIA2/SFIA2/Service3/application/prizes.txt"):
+        coloumnlist = str(row)
+        coloumnlist = coloumnlist.split(",")
+    assert len(coloumnlist) == 7
