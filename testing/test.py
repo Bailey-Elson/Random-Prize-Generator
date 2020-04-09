@@ -11,10 +11,10 @@ def test_service():
     assert 200 == r.status
 def test_service1():
     http = urllib3.PoolManager()
-    r = http.request('GET', 'http://35.230.134.136/')
+    r = http.request('GET', 'http://localhost/')
     assert 200 == r.status
 def test_getresponse():
-    r = requests.get('http://35.230.134.136/')
+    r = requests.get('http://localhost/')
     assert isinstance(r.text, str)
 app=Flask(__name__)
 app.config['MYSQL_HOST']=os.environ['MYSQLHOST']
