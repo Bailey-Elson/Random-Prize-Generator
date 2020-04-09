@@ -21,10 +21,21 @@ app.config['MYSQL_USER']=os.environ['MYSQLUSER']
 app.config['MYSQL_PASSWORD']=os.environ['MYSQLPASSWORD']
 app.config['MYSQL_DB']=os.environ['MYSQLDB']
 mysql = MySQL(app)
-def test_readSongsTable():
+def test_readPrizeTable():
     with app.app_context():
         cur = mysql.connection.cursor()
         numRecords = cur.execute("SELECT * FROM prizes;")
         mysql.connection.commit()
         cur.close()
         assert 0 < numRecords
+def test_addPrizeTable():
+    with app.app_context():
+        cur = mysql.connection.cursor()
+        numRecords1 = cur.execute("SELECT * FROM prizes;")
+        mysql.connection.commit()
+        cur.execute("INSERT INTO prizes(prize)VALUES('you won a test prize, you won a test');")
+        mysql.connection.commit()
+        numRecords2 = cur.execute("SELECT * FROM prizes;")
+        mysql.connection.commit()
+        cur.close()
+        assert numRecords1 + 1 == numRecords2
