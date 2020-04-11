@@ -87,6 +87,12 @@ The above image is my inital design for the user interface. As a complicated or 
 
 #### End Plan
 #### End Diagrams
+###### Application Flowchart
+
+![Imgur](https://imgur.com/mClk69s.png)
+
+From my initial plan to my end plan the only significant change was within service 3. Instead of randomly selecting a prize from three different list variables, within python, based on the prize type, the application now accesses a csv file that contains three rows. The csv file will contain all the different prizes split by the prize type into three different rows. 
+
 ---
 ## Testing
 
