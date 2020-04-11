@@ -94,19 +94,19 @@ My testing will be split into three main areas. These three sections are URL tes
 
 ###### URL Testing
 
-![Imgur](https://imgur.com/9vm4mhl)
+![Imgur](https://imgur.com/9vm4mhl.png)
 
 Above is an example of one of the URL tests. Every URL test is done for both the manager and the worker node. These various different tests are checking the ability to access the ip address and checks if the connection was succesful or not.
 
 ###### Database Testing 
 
-![Imgur](https://imgur.com/HX3tRCv)
+![Imgur](https://imgur.com/HX3tRCv.png)
 
 Above is one example of a databse test. The various different datasbae tests are there to check the ability to connect to the databse succesfully and then has the ability to succesfully complete CRUD functions.
 
 ###### CSV File Testing 
 
-![Imgur](https://imgur.com/SroYUKw)
+![Imgur](https://imgur.com/SroYUKw.png)
 
 Above is an example of a CSV file test. The CSV file tests are checking that the file can be succesfully accessed and then the tests are checking if its the correct file with the correct about of rows and coloumns.
 
