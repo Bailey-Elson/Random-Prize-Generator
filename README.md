@@ -46,6 +46,8 @@ This service will create an “Object” based upon the results of service #2 + 
 #### Sprints
 ---
 ## Risk Assesment 
+
+
 ---
 ## My Soloution 
 #### Initial Plan
@@ -115,6 +117,14 @@ Above is one example of a databse test. The various different datasbae tests are
 ![Imgur](https://imgur.com/SroYUKw.png)
 
 Above is an example of a CSV file test. The CSV file tests are checking that the file can be succesfully accessed and then the tests are checking if its the correct file with the correct about of rows and coloumns.
+
+#### Coverage
+
+The required testing coverage for this project is 35%. Using pythons pytest and coverage modules i got the following results ahnd coverage which i then converted into a html coverage report. 
+
+![Imgur](https://imgur.com/Ht6E30e.png)
+![Imgur](https://imgur.com/9fQJ8UC.png)
+![Imgur](https://imgur.com/STO0ZUc.png)
 
 ---
 ## Development 
