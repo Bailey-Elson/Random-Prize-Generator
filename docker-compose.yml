@@ -1,0 +1,48 @@
+version: "3.7"
+services:
+    service1:
+        image: baileyelson/sfia2service1
+        environment: 
+            - MYSQLHOST=${MYSQLHOST}
+            - MYSQLUSER=${MYSQLUSER}
+            - MYSQLPASSWORD=${MYSQLPASSWORD}
+            - MYSQLDB=${MYSQLDB}
+        deploy:
+            replicas: 3
+        networks: 
+            - ingress 
+    service2:
+        image: baileyelson/sfia2service2
+        deploy: 
+            replicas: 3
+        networks: 
+            - ingress 
+    service3:
+        image: baileyelson/sfia2service3
+        deploy:
+            replicas: 3
+        networks: 
+            - ingress 
+    service4: 
+        image: baileyelson/sfia2service4
+        deploy:
+            replicas: 3
+        networks: 
+            - ingress 
+    servicenginx:
+        image: baileyelson/sfia2nginx
+        ports: 
+            - "80:80"
+        networks:
+            - ingress 
+        depends_on: 
+            - service1
+            - service2
+            - service3
+            - service4
+        deploy:
+            replicas: 3
+
+networks: 
+    ingress:
+        driver: overlay
