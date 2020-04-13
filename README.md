@@ -59,10 +59,14 @@ Sprint 3 consists of turning the application into a docker application that comm
 ###### sprint 4   Length: 1 Week
 ![Imgur](https://imgur.com/w8rmCxJ.png)
 Sprint 4 consists of adding ansible to the project as well as creating the jenkins pipeline and finishing all the documentation.
+###### Feature Branch Model
+![Imgur](https://i.imgur.com/Y8ZaBG5.jpg)
+Above is a sketch describing the branch model i will be using for the project.
+
 
 ---
 ## Risk Assesment 
-
+Due to the size of my risk assesment i have chosen to attach it as a seperate file. Please find it within the documentation folder of this repository.
 
 ---
 ## My Soloution 
@@ -83,6 +87,7 @@ Service #3:
 Service #4:
    * Calls service #2 and #3 
    * Generates the output sentence based on service #2 and #3 return values
+
 
 #### Initial Diagrams
 ###### Application flowchart 
@@ -141,6 +146,10 @@ The required testing coverage for this project is 35%. Using pythons pytest and 
 ![Imgur](https://imgur.com/Ht6E30e.png)
 ![Imgur](https://imgur.com/9fQJ8UC.png)
 ![Imgur](https://imgur.com/STO0ZUc.png)
+
+#### Changes
+
+Due to the fact that all my tests were succesfully completed i didnt have to refactor any code due to the reults. I did however have to add some extra code to service 3 routes.py originally so that even without a prize type it would succesfully connect to the url however this problem was made redundant once i implemented the CSV file.
 
 ---
 ## Development 
