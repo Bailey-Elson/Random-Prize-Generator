@@ -156,6 +156,35 @@ Due to the fact that all my tests were succesfully completed i didnt have to ref
 #### CI Pipeline 
 ---
 ## Evaluation 
+
+Requiremnet 1: Kanban Board with full expansion on tasks needed to complete the project
+A trello board was created and updated throughout the entire project
+
+Requiremnet 2: An Application fully integrated using the Feature-Branch model into a Version Control System
+The application had 4 branchs that used the feature branch model
+
+Requiremnet 3: CI server with webhooks
+A jenkins pipeline was used with a github webhook
+
+Requiremnet 4: Deployed to a cloud-based virtual machine
+Deployed to two seperate virtual machines, one a manger node and one a worker node.
+
+Requiremnet 5: Follow the Micro Services architecture 
+The application was split into 4 micro services that followed that architecture
+
+Requiremnet 6: Deployed using containerisation and an orchestration tool
+Deployed using the docker containerisation and an orchestration tool
+
+Requiremnet 7: Create an Ansible Playbook that will provision the environment that your application needs to run
+this can be seen in my repository in the playbook.yml file
+
+#### What went well
+I went above the sepcification in certain areas of the application. One of these areas being the application accessing and reading a CSV file. Another example is the jenkins pipeline. Instead of just having freestyle jenkins project i had a pipeline project.
+
+#### What could've gone better
+The overall testing of the application couldve been imporved with the possility of creating a new image within the docker service that could access the different port urls to test them seperatly. Also although the coverage was above the wanted 35% i could still increase it. Finally i could've added selenium testing.
+Another area i could've improved on is hiding the IP addresses from my ansible files. This wouldve increased the projects security.
+
 ---
 ## Future Implementations
 
