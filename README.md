@@ -44,8 +44,26 @@ This service will create an “Object” based upon the results of service #2 + 
 ## Project Plan 
 #### Kanban Board
 #### Sprints
+###### Key 
+![Imgur](https://imgur.com/u3km3WL.png)
+Pictured above is the key i will be using for the different tasks within my sprints.
+###### Sprint 1   Length: 3 Days
+![Imgur](https://imgur.com/mpkBBqt.png)
+Sprint 1 consists of tasks for the set up of the entire project as well as create a skeleton version of the application that works within a single python folder.
+###### Sprint 2   Length: 3 Days
+![Imgur](https://imgur.com/VbNW5zQ.png)
+Sprint 2 consists of splitting the apllication up into four sections which will later become the four services.
+###### Sprint 3   Length: 1 Week
+![Imgur](https://imgur.com/dbm8U0N.png)
+Sprint 3 consists of turning the application into a docker application that communicates between four services.
+###### sprint 4   Length: 1 Week
+![Imgur](https://imgur.com/w8rmCxJ.png)
+Sprint 4 consists of adding ansible to the project as well as creating the jenkins pipeline and finishing all the documentation.
+
 ---
 ## Risk Assesment 
+
+
 ---
 ## My Soloution 
 #### Initial Plan
@@ -87,8 +105,43 @@ The above image is my inital design for the user interface. As a complicated or 
 
 #### End Plan
 #### End Diagrams
+###### Application Flowchart
+
+![Imgur](https://imgur.com/mClk69s.png)
+
+From my initial plan to my end plan the only significant change was within service 3. Instead of randomly selecting a prize from three different list variables, within python, based on the prize type, the application now accesses a csv file that contains three rows. The csv file will contain all the different prizes split by the prize type into three different rows. 
+
 ---
 ## Testing
+
+My testing will be split into three main areas. These three sections are URL testing, database testing and finally CSV file testing. 
+
+###### URL Testing
+
+![Imgur](https://imgur.com/9vm4mhl.png)
+
+Above is an example of one of the URL tests. Every URL test is done for both the manager and the worker node. These various different tests are checking the ability to access the ip address and checks if the connection was succesful or not.
+
+###### Database Testing 
+
+![Imgur](https://imgur.com/HX3tRCv.png)
+
+Above is one example of a databse test. The various different datasbae tests are there to check the ability to connect to the databse succesfully and then has the ability to succesfully complete CRUD functions.
+
+###### CSV File Testing 
+
+![Imgur](https://imgur.com/SroYUKw.png)
+
+Above is an example of a CSV file test. The CSV file tests are checking that the file can be succesfully accessed and then the tests are checking if its the correct file with the correct about of rows and coloumns.
+
+#### Coverage
+
+The required testing coverage for this project is 35%. Using pythons pytest and coverage modules i got the following results ahnd coverage which i then converted into a html coverage report. 
+
+![Imgur](https://imgur.com/Ht6E30e.png)
+![Imgur](https://imgur.com/9fQJ8UC.png)
+![Imgur](https://imgur.com/STO0ZUc.png)
+
 ---
 ## Development 
 #### CI Pipeline 
