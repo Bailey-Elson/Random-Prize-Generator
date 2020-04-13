@@ -165,11 +165,19 @@ Due to the fact that all my tests were succesfully completed i didnt have to ref
 
 The above image is a rough design for a new user interface. This new design is more aesthetically pleasing then then the old design while keeping all the applications functionality. 
 
+![Imgur](https://imgur.com/X9C8wx2.png)
+
+Above is a rough sprint plan for this future implementation. I estimate that this sprint will tale 3 days.
+
 ###### Expanded Database
 
 ![Imgur](https://i.imgur.com/gtfJFhj.png)
 
 The above diagram is a rough design for an expanded database. Firstly i have expanded the Prizes table so that the data is store in two different coloumns (PrizeType and Prize) instead of everything being stored in the single prize coloumn. Also two new tables have been added, firstly a Users table storing a users details. For the Users table to be added service #1 and the user interface would have to be editted for extra inputs (FirstName, LastName and UserName) to be entered every time a prize is generated or a log in feature added. The second table User_Prizes is a joining table between the two, with this table have a many to many relatioship with both the others.
+
+![Imgur](https://imgur.com/fPtcBg1.png)
+
+Above is a rough sprint plan for this future implementation. I estimate that this sprint will tale 1 week.
 
 ---
 
