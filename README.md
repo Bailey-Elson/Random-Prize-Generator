@@ -45,22 +45,34 @@ This service will create an “Object” based upon the results of service #2 + 
 #### Kanban Board
 #### Sprints
 ###### Key 
+
 ![Imgur](https://imgur.com/u3km3WL.png)
+
 Pictured above is the key i will be using for the different tasks within my sprints.
 ###### Sprint 1   Length: 3 Days
+
 ![Imgur](https://imgur.com/mpkBBqt.png)
+
 Sprint 1 consists of tasks for the set up of the entire project as well as create a skeleton version of the application that works within a single python folder.
 ###### Sprint 2   Length: 3 Days
+
 ![Imgur](https://imgur.com/VbNW5zQ.png)
+
 Sprint 2 consists of splitting the apllication up into four sections which will later become the four services.
 ###### Sprint 3   Length: 1 Week
+
 ![Imgur](https://imgur.com/dbm8U0N.png)
+
 Sprint 3 consists of turning the application into a docker application that communicates between four services.
 ###### sprint 4   Length: 1 Week
+
 ![Imgur](https://imgur.com/w8rmCxJ.png)
+
 Sprint 4 consists of adding ansible to the project as well as creating the jenkins pipeline and finishing all the documentation.
 ###### Feature Branch Model
+
 ![Imgur](https://i.imgur.com/Y8ZaBG5.jpg)
+
 Above is a sketch describing the branch model i will be using for the project.
 
 
