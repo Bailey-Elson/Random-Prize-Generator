@@ -17,6 +17,7 @@
    * CI Pipeline
 7. Evaluation 
 8. Future Implementations 
+9. Installation Guide
 
 ---
 ## Brief
@@ -238,4 +239,9 @@ The above diagram is a rough design for an expanded database. Firstly i have exp
 Above is a rough sprint plan for this future implementation. I estimate that this sprint will tale 1 week.
 
 ---
+
+## Installation Guide
+
+I have decided to attach the installation guide as a seperate document that can be found within my documentation folder of this repository.
+
 
