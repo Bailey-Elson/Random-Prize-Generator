@@ -166,6 +166,23 @@ Due to the fact that all my tests were succesfully completed i didnt have to ref
 ---
 ## Development 
 #### CI Pipeline 
+
+![Imgur](https://imgur.com/q4rETh3.png)
+
+For my CI pipeline I will be using a Jenkins server with a webhook connection to my github for automated builds whenever anything is committed to my github. My jenkins Pipeline will be split into two sections a development environment which will install any required tools and then run the application. The second section will be a testing section which will run the tests talked about previously.
+
+Technologies used:
+   * Github: hosting for software development version control 
+   * Python: high-level, general-purpose programming language
+   * Visual Studio Code: Source-code editor
+   * HTML: mark-up language for web browsers
+   * Jenkins: open source automation server
+   * Google Cloud Platform: cloud computing services
+   * MYSQL: open-source relational database management system
+   * Docker: Containirisation service 
+   * Ansible: Software provisioning, configuration management, and application-deployment tool
+   * Ngninx: reverse proxy web service
+   
 ---
 ## Evaluation 
 
