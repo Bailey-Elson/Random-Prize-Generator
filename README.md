@@ -1,6 +1,5 @@
 # SFIA2
 
-
 1. Brief 
     * Objective
     * Requirements
